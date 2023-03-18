@@ -10,7 +10,6 @@
    --icon-footer-socials-color: rgba(255, 255, 255, 0.1);
    --modal-white-color: #FCFCFC;
    --backdrop-color: rgba(46, 47, 66, 0.4);
-
 }
 
 body {
@@ -20,9 +19,7 @@ body {
    line-height: 1.5;
    font-family: 'Roboto', sans-serif;
 }
-
 /*          ---- -----components----- */
-
 .container {
    min-width: 320px;
    max-width: 428px;
@@ -57,7 +54,13 @@ body {
 }
 
 /*                ----reset--------- */
-h1, h2, h3, h4, h5, h6, p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
    margin: 0;
 }
 
@@ -92,8 +95,7 @@ button {
 
 .header-containernav {
    display: flex;
-   align-items: center;   
-   
+   align-items: center;
 }
 @media screen and (min-width: 768px) {
    .header-container {
@@ -135,8 +137,7 @@ button {
 }
 
 .nav-list{
-   display: none;
-   
+   display: none;   
 }
 @media screen and (min-width: 768px) {
    .nav-list {
@@ -153,10 +154,8 @@ button {
 }
 .nav-item {
    display: block;
-      max-width: 100%;
-      height: auto;
-      
-      
+   max-width: 100%;
+   height: auto;    
 }
 
 .sitenav {
@@ -286,6 +285,7 @@ button {
    }
 }
 /* ------------------------- Hero----------- */
+
 .hero {
    padding-top: 188px;
    padding-bottom: 188px;
@@ -309,7 +309,12 @@ button {
    font-size: 56px;
    line-height: 1.07;         
 }
-
+@media screen and (max-width: 768px) {
+   .hero-title {
+      font-size: 36px;
+      width: unset;
+   }
+}
 .button-hero {
    display: inline-block;
    padding: 16px 32px;
@@ -331,19 +336,38 @@ button {
    background-color: var(--button-nav-color);
 }
 
-/*--   --     ------ Solutions -------- styles*/
+/*---------------- Solutions -------- styles*/
 .solutions {
    padding-top: 120px;
    padding-bottom: 120px;
 }
-
+@media screen and (max-width: 768px) {
+   .solutions {
+      padding: 90px 0;
+   }
+}
 .solutions-list {
    display: flex;
    gap: 24px;
 }
-
+@media screen and (max-width: 1200px) {
+   .solutions-list {
+      flex-wrap: wrap;
+   }
+}
 .solutions-item {
    flex-basis: calc((100% - 72px) / 4);
+}
+@media screen and (max-width: 768px) {
+   .solutions-item {
+      text-align: center;
+      }
+}
+@media screen and (max-width: 1200px) {
+   .solutions-item {
+      flex: 1 1 calc(50% - 24px);
+      margin-bottom: 40px;
+   }
 }
 .icon-solution-container {
    display: flex;
@@ -354,18 +378,21 @@ button {
    align-items: center;
    border-radius: 4px;
 }
- 
+ @media screen and (max-width: 1200px) {
+    .icon-solution-container {
+       display: none;
+    }
+ }
 .solution-icon {
    width: 64px;
    height: 64px;
 }
-
 .section-title {
    color: var(--section-title-color);
    font-size: 36px;
    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
+   text-align: center;
+   text-transform: capitalize;
    letter-spacing: 0.02em;
    margin-top: 0;
    margin-bottom: 72px;
@@ -379,7 +406,14 @@ button {
    margin-bottom: 8px;
    color: var(--section-title-color);
 }
+@media screen and (max-width: 1200px) {
+   .section-subtitle {
+      font-size: 36px;
+      }
+}
 
+
+/* ////////////////// */
 .discriptions {
    margin-top: 0;
    margin-bottom: 0;
@@ -391,6 +425,11 @@ button {
 
 .ourdoing {
    padding-bottom: 120px;
+}
+@media screen and (max-width: 1200px) {
+   .ourdoing {
+      display: none;
+      }
 }
 
 .ourdoing-picture {
@@ -415,22 +454,53 @@ button {
    padding-bottom: 120px;
    background-color: var(--light-logo-color);
 }
-
+@media screen and (max-width: 768px) {
+   .team {
+      padding: 90px 0;
+   }
+}
 .team-list {
    display: flex;
    gap: 24px;
 }
-
-.team-item {
+@media screen and (max-width: 1200px) {
+   .team-list {
+      flex-wrap: wrap;
+       max-width: 600px;
+      margin: 0 auto;
+   }
+}
+@media screen and (max-width: 1200px) {
+   .team-item-content {
+      margin: 0 auto;
+   }
+}
+@media screen and (max-width: 1200px) {
+   .team-item {
+      flex: 1 1 calc(50% - 24px);
+   }
+}
+.team-item-content {
+   max-width: 260px;
+   padding-bottom: 32px;
+   text-align: center;
+   flex-basis: calc((100% - 72px) / 4);
+   background-color: var(--primary-white-color);
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+   border-radius: 0px 0px 4px 4px;
+}
+/* .team-item {
    padding-bottom: 32px;
    text-align: center;
    flex-basis: calc((100% - 72px) / 4);
    background-color: var(--primary-white-color);
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
    border-radius: 0px 0px 4px 4px;
-}
+} */
 .team-pectures{
    margin-bottom: 32px;
+   width: 100%;
 }
 
 .social-list {
@@ -467,19 +537,35 @@ button {
 .social-link:focus {
    background-color: var(--button-nav-color);
 }
-/*---------------customers-------------- */
+/*---------------------customers-------------- */
+
 .customers{
    padding-top: 130px;
    padding-bottom: 120px;
 }
-
+@media screen and (max-width: 768px) {
+   .customers {
+      padding: 90px 0;
+   }
+}
 .customers-list{
    display: flex;
    justify-content: center;
    gap: 24px;
 }
+@media screen and (max-width: 1200px) {
+   .customers-list {
+      flex-wrap: wrap;
+   }
+}
 .customers-item{
     flex-basis: calc((100% - 120px) / 6);    
+}
+@media screen and (max-width: 1200px) {
+   .customers-item {
+      flex: 1 1 calc(33% - 24px);
+      margin-bottom: 50px;
+   }
 }
 .customers-link {
    display: flex;
@@ -491,7 +577,11 @@ button {
    border-radius: 4px;
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media screen and (max-width: 1200px) {
+   .customers-link {
+      width: 100%;
+   }
+}
 .customers-icon{
    width: 105px;
    height: 56px;   
@@ -509,7 +599,9 @@ button {
    fill: var(--button-nav-color);
 }
 
-/* ----           ------footer---------- */
+/* --------------------------footer---------- */
+
+
 .page-footer {
    padding-top: 100px;
    padding-bottom: 100px;
@@ -519,7 +611,13 @@ button {
 .footer-container {
    display: flex;
 }
-
+@media screen and (max-width: 1200px) {
+   .footer-container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 100px;
+   }
+}
 .footer-text-wraper {
    margin-right: 120px;        
 }
@@ -589,7 +687,12 @@ button {
 .footer-modal-form-container{
    margin-left: 80px;
 }
-
+@media screen and (max-width: 1200px) {
+   .footer-modal-form-container {
+      flex: 1 1 100%;
+      margin: 72px 0 0 0;
+   }
+}
 .footer-modal-form{
    display: flex;     
 }
@@ -644,7 +747,7 @@ button {
 .modal-footer-button:focus {
    background-color: var(--button-nav-color);
 }
-/* --------------/------------ */
+/* 
 /* ------------ portfolio styles------------ */
 
 .projects {
@@ -673,7 +776,9 @@ button {
    border: 1px solid #E7E9FC;
    border-radius: 4px;
    cursor: pointer;
-   transition: color  250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: color  250ms cubic-bezier(0.4, 0, 0.2, 1),
+   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-projects:hover,
@@ -737,13 +842,15 @@ button {
 }
 
 .foto-item{
-display: block;
+   display: block;
    max-width: 100%;
-    height: auto;     
+   height: auto;     
 } 
 .foto-link:hover,
 .foto-link:focus {
-   box-shadow: 10px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);         
+   box-shadow: 10px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+     0px 2px 1px rgba(46, 47, 66, 0.08);         
  }
 
 .foto-link:hover .overlay,
@@ -781,8 +888,7 @@ display: block;
    padding-top: 72px;
    padding-left: 24px;
    padding-right: 24px;
-   padding-bottom: 24px;
-
+   padding-bottom: 24px
 }
 
 .modal-close-button {
@@ -934,10 +1040,8 @@ background-color: var(--accent-color);
    background-image:url(../images/white-arrow.svg);
    background-repeat: no-repeat;
    background-size: contain;
-   background-color: var(--accent-color);
-   
+   background-color: var(--accent-color);   
 }
-
    
  .modal-form-check-description {
    display: flex;
