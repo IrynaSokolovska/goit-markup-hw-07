@@ -28,13 +28,6 @@
           <a href="./index.html" class="logo link"
             >Web<span class="secondpart-logo link">Studio</span>
           </a>
-
-          <!-- <button class="menu-hamburger js-open-menu" type="button">
-            <svg class="icon-menu-hamburger">
-              <use href="./images/icons.svg#icon-menu-hamburger"></use>
-            </svg>
-          </button> -->
-
           <ul class="nav-list list">
             <li class="nav-item">
               <a href="./index.html" class="sitenav link current">Studio</a>
@@ -46,6 +39,13 @@
               <a href="" class="sitenav link">Contacts</a>
             </li>
           </ul>
+          
+          <button class="header-burger-button js-open-menu" type="button">
+            <svg class="icon-burger" width="32" height="22">
+              <use href="/images/icons.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
+
         </nav>
         <address class="authnav-menu">
           <ul class="authnav-list list">
@@ -61,12 +61,14 @@
             </li>
           </ul>
         </address>
-        <div class="header-container-mobile">
-          <button class="header-burger-button js-open-menu" type="button">
+        
+      </div>
+      <div class="header-container-mobile">
+          <!-- <button class="header-burger-button js-open-menu" type="button">
             <svg class="icon-burger" width="32" height="22">
               <use href="/images/icons.svg#icon-menu-burger"></use>
             </svg>
-          </button>
+          </button> -->
 
           <div class="mobile-menu js-menu-container">
             <button class="js-close-menu burger-close-button" type="button">
@@ -76,7 +78,8 @@
                </svg>
             </button>
 
-            <ul class="">
+            <div class="container">
+              <ul class="">
               <li class="nav-item">
                 <a href="./index.html" class="sitenav link current">Studio</a>
               </li>
@@ -86,6 +89,9 @@
               <li class="nav-item">
                 <a href="" class="sitenav link">Contacts</a>
               </li>
+            </div>
+
+            <div class="container">
               <li class="authnav-item">
                 <a href="mailto:info@devstudio.com" class="authnav link"
                 >info@devstudio.com</a>
@@ -94,10 +100,45 @@
                 <a href="tel:+110001111111" class="authnav link"
                 >+11 (000) 111-11-11</a>
               </li>
+            </div>          
+              <div class="container">
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a class="social-link" href="">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-item">
+                    <a class="social-link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-item">
+                    <a class="social-link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-item">
+                    <a class="social-link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </ul>
           </div>
         </div>
-      </div>
     </header>
 
     <main>
