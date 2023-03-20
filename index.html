@@ -70,7 +70,7 @@
             </svg>
           </button> -->
 
-          <div class="mobile-menu js-menu-container">
+          <div class="mobile-menu js-menu-container mobile-menu-container">
             <button class="js-close-menu burger-close-button" type="button">
               <svg class="modal-close-button-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-closemodal">
@@ -78,28 +78,31 @@
                </svg>
             </button>
 
-            <div class="container">
-              <ul class="">
-              <li class="nav-item">
+            <div class="nav-momile-menu-container">
+              <ul class="nav-mobile-item">
+              <li class="nav-item nav-item-mobile">
                 <a href="./index.html" class="sitenav link current">Studio</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item nav-item-mobile">
                 <a href="./portfolio.html" class="sitenav link">Portfolio</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item nav-item-mobile">
                 <a href="" class="sitenav link">Contacts</a>
               </li>
             </div>
 
-            <div class="container">
-              <li class="authnav-item">
-                <a href="mailto:info@devstudio.com" class="authnav link"
-                >info@devstudio.com</a>
-              </li>
-              <li class="authnav-item">
+            <div class="authnav-momile-menu-container">
+              <ul class="list">
+                <li class="authnav-item authnav-item-first">
                 <a href="tel:+110001111111" class="authnav link"
                 >+11 (000) 111-11-11</a>
               </li>
+              <li class="authnav-item authnav-item-mobile">
+                <a href="mailto:info@devstudio.com" class="authnav link"
+                >info@devstudio.com</a>
+              </li>
+              
+              </ul>
             </div>          
               <div class="container">
                 <ul class="social-list">
@@ -218,6 +221,65 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="ourdoing-list list">
             <li class="ourdoing-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/ourdoing/computer.webp    1x,
+                    ./images/ourdoing/computer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/ourdoing/computer.jpg    1x,
+                    ./images/ourdoing/computer@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/ourdoing/computer.jpg"
+                  alt="website"
+                  height="300"
+                  width="360"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li class="ourdoing-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/ourdoing/phone.webp    1x,
+                    ./images/ourdoing/phone@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/ourdoing/phone.jpg    1x,
+                    ./images/ourdoing/phone@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  src="./images/ourdoing/phone.jpg"
+                  alt="app"
+                  height="300"
+                  width="360"
+                  loading="lazy"
+              /></picture>
+            </li>
+            <li class="ourdoing-item">
+              <img
+                srcset="
+                  ./images/ourdoing/phone-and-computer.jpg    1x,
+                  ./images/ourdoing/phone-and-computer@2x.jpg 2x
+                "
+                src="./images/ourdoing/phone-and-computer.jpg"
+                alt="desing"
+                height="300"
+                width="360"
+              />
+            </li>
+            <!-- <li class="ourdoing-item">
               <img
                 class="ourdoing-picture"
                 src="./images/comp.jpg"
@@ -240,7 +302,7 @@
                 alt="hand with phone"
                 width="360"
               />
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
@@ -253,11 +315,16 @@
             <li class="team-item">
               <div class="team-item-content">
                 <img
-                  class="team-pectures"
-                  src="./images/markteam.jpg"
-                  alt="product designer photo"
-                  width="264"
-                />
+                srcset="
+                  ./images/team/mark-guerrero.jpg    1x,
+                  ./images/team/mark-guerrero@2x.jpg 2x
+                "
+                src="./images/team/mark-guerrero.jpg"
+                alt="photo Mark Guerrero"
+                width="264"
+                height="260"
+              />
+                
                 <h3 class="section-subtitle">Mark Guerrero</h3>
                 <p class="discriptions">Product Designer</p>
 
@@ -300,11 +367,16 @@
             <li class="team-item">
               <div class="team-item-content">
                 <img
-                  class="team-pectures"
-                  src="./images/tomteam.jpg"
-                  alt="frontend developer photo"
-                  width="264"
-                />
+                srcset="
+                  ./images/team/tom-ford.jpg    1x,
+                  ./images/team/tom-ford@2x.jpg 2x
+                "
+                src="./images/team/tom-ford.jpg"
+                alt="photo Tom Ford"
+                width="264"
+                height="260"
+              />
+                
                 <h3 class="section-subtitle">Tom Ford</h3>
                 <p class="discriptions">Frontend Developer</p>
 
@@ -347,11 +419,15 @@
             <li class="team-item">
               <div class="team-item-content">
                 <img
-                  class="team-pectures"
-                  src="./images/camillateam.jpg"
-                  alt="marketing photo"
-                  width="264"
-                />
+                srcset="
+                  ./images/team/camila-garcia.jpg    1x,
+                  ./images/team/camila-garcia@2x.jpg 2x
+                "
+                src="./images/team/camila-garcia.jpg"
+                alt="photo Camila Garcia"
+                width="264"
+                height="260"
+              />
                 <h3 class="section-subtitle">Camila Garcia</h3>
                 <p class="discriptions">Marketing</p>
 
@@ -394,11 +470,15 @@
             <li class="team-item">
               <div class="team-item-content">
                 <img
-                  class="team-pectures"
-                  src="./images/danielteam.jpg"
-                  alt="ul designer photo"
-                  width="264"
-                />
+                srcset="
+                  ./images/team/daniel-wilson.jpg    1x,
+                  ./images/team/daniel-wilson@2x.jpg 2x
+                "
+                src="./images/team/daniel-wilson.jpg"
+                alt="photo Daniel Wilson"
+                width="264"
+                height="260"
+              />
                 <h3 class="section-subtitle">Daniel Wilson</h3>
                 <p class="discriptions">UI Designer</p>
 
