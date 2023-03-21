@@ -676,6 +676,11 @@ img {
       flex-basis: calc((100% - 72px) / 4);
    }
 }
+@media screen and (max-width: 1199px) {
+.visually-hidden {
+   display: none;
+   }
+}
 
 @media screen and (max-width: 1199px) {
    .skills-svg {
