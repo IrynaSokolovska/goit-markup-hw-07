@@ -617,7 +617,8 @@ img {
 
 @media screen and (min-width: 1200px) {
    .section-skills {
-      padding-bottom: 0;
+      padding: auto;
+      /* padding-bottom: 0; */
    }
 }
 
